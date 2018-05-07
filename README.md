@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Cook book project remake.
 
-Things you may want to cover:
+Idea is to standardise recipes, cut out unnecessary descriptions
+and optimise using the recipe by good arrangement of each part of it.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+At first it will be made for home use. 
+Future will depends on how much I'll like it. 

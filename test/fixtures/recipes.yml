@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  serves: 1
+  prepare_time: 1
+  calories: 1
+  equipment: MyText
+  ingredients: MyText
+  directions: MyText
+
+two:
+  title: MyString
+  serves: 1
+  prepare_time: 1
+  calories: 1
+  equipment: MyText
+  ingredients: MyText
+  directions: MyText

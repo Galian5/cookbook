@@ -1,0 +1,41 @@
+<%= form_with scope: :recipe, local: true do |form| %>
+    <p>
+      <%= form.label :title %><br>
+      <%= form.text_field :title %>
+    </p>
+
+    <p>
+      <%= form.label :serves %><br>
+      <%= form.text_field :serves %>
+    </p>
+
+    <p>
+      <%= form.label :prepare_time %><br>
+      <%= form.text_field :prepare_time %>
+    </p>
+
+    <p>
+      <%= form.label :calories %><br>
+      <%= form.text_field :calories %>
+    </p>
+
+    <p>
+      <%= form.label :equipment %><br>
+      <%= form.text_area :equipment %>
+    </p>
+
+    <p>
+      <%= form.label :ingredients %><br>
+      <%= form.text_area :ingredients %>
+    </p>
+
+
+    <p>
+      <%= form.label :directions %><br>
+      <%= form.text_area :directions %>
+    </p>
+
+    <p>
+      <%= form.submit %>
+    </p>
+<% end %>

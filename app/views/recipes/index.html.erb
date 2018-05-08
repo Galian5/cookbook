@@ -1,0 +1,19 @@
+<h1>List of recipes</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Difficulty</th>
+    <th>Time</th>
+    <th></th>
+  </tr>
+
+  <% @recipes.each do |recipe| %>
+      <tr>
+        <td><%= recipe.title %></td>
+        <td><%= recipe.difficulty %></td>
+        <td><%= recipe.prepare_time %></td>
+        <td><%= link_to 'Show', recipe_path(recipe) %></td>
+      </tr>
+  <% end %>
+</table>

@@ -1,0 +1,70 @@
+<%= form_with(model: @recipe, local: true) do |form| %>
+
+    <% if @recipe.errors.any? %>
+        <div id="error_explanation">
+          <h2>
+            <%= pluralize(@recipe.errors.count, "error") %> prohibited
+            this article from being saved:
+          </h2>
+          <ul>
+            <% @recipe.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+
+    <p>
+      <%= form.label :title %><br>
+      <%= form.text_field :title %>
+    </p>
+
+    <% if false %>
+        <p>
+          <%= form.label :difficulty %><br>
+          <%= form.select :difficulty %>
+        </p>
+    <% end %>
+
+    <p>
+      <%= form.label :serves %><br>
+      <%= form.text_field :serves %>
+    </p>
+
+    <p>
+      <%= form.label :prepare_time %><br>
+      <%= form.text_field :prepare_time %>
+    </p>
+
+    <p>
+      <%= form.label :calories %><br>
+      <%= form.text_field :calories %>
+    </p>
+
+    <p>
+      <%= form.label :equipment %><br>
+      <%= form.text_area :equipment %>
+    </p>
+
+    <p>
+      <%= form.label :ingredients %><br>
+      <%= form.text_area :ingredients %>
+    </p>
+
+
+    <p>
+      <%= form.label :directions %><br>
+      <%= form.text_area :directions %>
+    </p>
+
+    <p>
+      <%= form.label :photo %>
+      <%= form.file_field :photo %>
+    </p>
+
+    <p>
+      <%= form.submit %>
+    </p>
+
+<% end %>

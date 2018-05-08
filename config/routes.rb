@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-#  get 'recipes/new'
-#  post 'recipes/new'
+  root "recipes#index"
   resources :recipes
   resources :users
 end

@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e8ae744-3dba-4e4d-9cba-5c075a7b275c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/recipes/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/recipes/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/recipes/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/recipes/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/recipes/index.html.erb" afterPath="$PROJECT_DIR$/app/views/recipes/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/recipes/new.html.erb" afterPath="$PROJECT_DIR$/app/views/recipes/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/recipes/show.html.erb" afterPath="$PROJECT_DIR$/app/views/recipes/show.html.erb" />
-    </list>
+    <list default="true" id="8e8ae744-3dba-4e4d-9cba-5c075a7b275c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -357,7 +349,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41832000" />
+    <option name="totallyTimeSpent" value="41972000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1362" height="728" extended-state="0" />

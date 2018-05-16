@@ -35,5 +35,12 @@
   <%= @recipe.directions %>
 </p>
 
+<% if false %>
+<p>
+  <strong>Photos</strong>
+  <%= @recipe.photo %>
+</p>
+<% end %>
+
 <%= link_to 'Edit', edit_recipe_path(@recipe) %><br>
 <%= link_to 'Back', recipes_path %>

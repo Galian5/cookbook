@@ -10,6 +10,8 @@
   <%= @user.email %>
 </p>
 
+<% if false %>
+   # zrobic przepisy i wtedy odkomentowac
 <div>
   <% if @user.recipes.any? %>
     <strong>Recipes:</strong>
@@ -18,3 +20,4 @@
     </ul>
   <% end %>
 </div>
+<% end %>

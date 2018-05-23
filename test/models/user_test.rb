@@ -2,7 +2,8 @@ require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
   def setup
-    @user = User.new(name: 'Example', email: 'user@example.com')
+    @user = User.new(name: 'Example', email: 'user@example.com',
+                     password: 'dupa123', password_confirmation: 'dupa123')
   end
 
   test 'should be valid' do
@@ -36,6 +37,14 @@ class UserTest < ActiveSupport::TestCase
     assert_not non_unique.valid?
   end
 
+  test 'email should be lower-case' do
+    tested_email = 'test@EXAMPLE.com'
+    @user.email = tested_email
+    @user.save
+    assert_equal tested_email.downcase, @user.reload.email
+  end
+
+
   # this test is copied, but seems to work
   test "email validation should accept valid addresses" do
     valid_addresses = %w[user@example.com USER@foo.COM A_US-ER@foo.bar.org
@@ -45,6 +54,17 @@ class UserTest < ActiveSupport::TestCase
       assert @user.valid?, "#{valid_address.inspect} should be valid"
     end
   end
+
+  test 'password should not be blank' do
+    @user.password = @user.password_confirmation = ' '*10
+    assert_not @user.valid?
+  end
+
+  test 'password should not be too short' do
+    @user.password = @user.password_confirmation = 'x'*3
+    assert_not @user.valid?
+  end
+
 
 
 end

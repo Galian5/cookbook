@@ -1,12 +1,31 @@
-<header class='navbar navbar-fixed-top navbar-inverse'>
-  <div class='container'>
-    <%= link_to 'cook book', recipes_path, id: 'logo' %>
-    <nav>
-      <ul class='nav navbar-nav navbar-right'>
-        <li><%= link_to 'Home',   recipes_path %></li>
-        <li><%= link_to 'Add recipe',   new_recipe_path %></li>
-        <li><%= link_to 'Log in', '#' %></li>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <%= link_to 'cook book', recipes_path, id: 'logo' %>
+    </div>
+    <div id="navbar">
+      <% if signed_in? %>
+          <ul class="nav navbar-nav">
+            <li><%= link_to 'Add Recipe', new_recipe_path %></li>
+          </ul>
+      <% end %>
+
+      <ul class="nav navbar-nav pull-right">
+        <% if signed_in? %>
+            <li><span><%= current_user.email %></span></li>
+            <li><%= link_to 'Log out', sign_out_path, method: :delete %></li>
+        <% else %>
+            <li><%= link_to 'Log in', sign_in_path %></li>
+        <% end %>
       </ul>
-    </nav>
+    </div>
   </div>
-</header>
+</nav>
+
+<div class="container">
+  <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>">
+        <%= value %>
+      </div>
+  <% end %>
+</div>
